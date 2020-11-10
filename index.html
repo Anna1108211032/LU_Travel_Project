@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="icon" href="image/icon.png" sizes="60*60" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="themes/themes.css" />
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+     <style>
+         .ui-header {
+             display: flex;
+             flex-direction: column;
+             align-content: center;
+         }
+         .ui-body-c, .ui-header {
+        font-family: 'Noto Sans TC', sans-serif;
+        }
+        .ui-footer {
+        font-family: 'Grandstander', cursive;
+        }
+        .video-wrapper{
+        position: relative;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+    }
+
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0; 
+        width: 100%;
+        height: 100%;
+    }
+
+    #home img{
+        width: 100%;    
+       height: 100%;
+    }
+
+    #about img{
+        width: 100%;
+        height: 100%;
+    }
+    #about p{
+        color:rgb(76, 110, 150) ;
+    }
+    #page04 img{
+        width: 100%;
+        height: 100%;
+    }
+    #page03 p{
+        color: rgb(76, 110, 150);
+    }
+    #page02 p{
+        color: rgb(76, 110, 150);
+       
+    }
+    
+     </style>
+
+    <title>蘭嶼暢快遊</title>
+</head>
+<body>
+    
+    <!--首頁-->
+    <div data-role="page" id="home">
+
+        <div data-role="header">
+
+            <h1>蘭嶼暢快遊</h1>
+         <img src="image/01.jpg" alt="">
+                
+            </ul>
+        </div>
+         <div role="main" class="ui-content">
+            <h2>來去蘭嶼旅遊吧!</h2>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#page01">
+                    <img src="https://picsum.photos/250" alt="">
+                    <h2>歷史地理</h2>
+                    <p>歷史....</p>
+                </a></li>
+
+                <li><a href="#page02">
+                    <img src="https://picsum.photos/400" alt="">
+                    <h2>特色景點</h2>
+                    <p>景點.....</p>
+                </a></li>
+
+                <li><a href="#page03">
+                    <img src="https://picsum.photos/600" alt="">
+                    <h2>在地美食</h2>
+                    <p>美食...</p>
+                </a></li>
+
+                <li><a href="#page04">
+                    <img src="https://picsum.photos/800" alt="">
+                    <h2>交通資訊</h2>
+                    <p>交通...</p>
+                </a></li>
+                <li><a href="#about">
+                    <img src="https://picsum.photos/500" alt="">
+                    <h2>關於我們</h2>
+                    <p>我們...</p>
+                </a></li>
+            </ul>
+         </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Anna</h4> 
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page01" data-icon="bullets">歷史地理</a></li>
+                    <li><a href="#page02" data-icon="bullets">特色景點</a></li>
+                    <li><a href="#page03" data-icon="bullets">在地美食</a></li>
+                    <li><a href="#page04" data-icon="bullets">交通資訊</a></li>
+                    <li><a href="#about" data-icon="bullets">關於我們</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div><!--首頁-->
+
+       
+    <!--歷史地理-->
+    <div data-role="page" id="page01">
+
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+
+            <h1>蘭嶼暢快遊</h1>
+        </div>
+         <div role="main" class="ui-content">
+            <h2>歷史地理</h2>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5ijsvT71qVc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+         </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Anna</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="bullets">首頁</a></li>
+                    <li><a href="#page02" data-icon="bullets">特色景點</a></li>
+                    <li><a href="#page03" data-icon="bullets">在地美食</a></li>
+                    <li><a href="#page04" data-icon="bullets">交通資訊</a></li>
+                    <li><a href="#about" data-icon="bullets">關於我們</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div><!--歷史地理-->
+
+     <!--特色景點-->
+     <div data-role="page" id="page02">
+
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+
+            <h1>蘭嶼暢快遊</h1>
+        </div>
+         <div role="main" class="ui-content">
+            <h2>特色景點</h2>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-p-2OwAL6ls" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h2>蘭嶼特色景點</h2>
+            <P>蘭嶼有許多好吃好玩的地方，像是浮潛就是去蘭嶼一定要嘗試一次的活動，也可以雌考時尚玩家的觀光路線喔!以下是一些蘭嶼景點</P>
+                <P>1.野銀部落（地下屋&冷泉）</P>
+                <P>2.青青草原</P>
+                <P>3.舊蘭嶼燈塔</P>
+                <P>4.蘭嶼氣象站</P>
+                <P>5.情人洞</P>
+                <P>6.雙獅岩</P>
+                <P>7.八代灣</P>
+                <P>8.東清灣</P>
+         </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Anna</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="bullets">首頁</a></li>
+                    <li><a href="#page01" data-icon="bullets">歷史地理</a></li>
+                    <li><a href="#page03" data-icon="bullets">在地美食</a></li>
+                    <li><a href="#page04" data-icon="bullets">交通資訊</a></li>
+                    <li><a href="#about" data-icon="bullets">關於我們</a></li>
+                </ul>
+            </div>
+           
+        </div>
+
+    </div><!--特色景點-->
+
+     <!--在地美食-->
+     <div data-role="page" id="page03">
+
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+
+            <h1>蘭嶼暢快遊</h1>
+        </div>
+         <div role="main" class="ui-content">
+            <h2>在地美食</h2>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QkERYPuS--g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3>關於飛魚</h3>
+            <p>飛魚是蘭嶼人最重要的食物，為主要的動物性蛋白質來源之一，捕捉飛魚是蘭嶼達悟族的傳統文化核心。每年春季，飛魚族群會隨著黑潮來到蘭嶼附近海域，此時蘭嶼人會舉行招來飛魚的招魚祭，招魚祭過後開始捕捉飛魚，也就是飛魚季節的開始。剛開始僅限於在夜間以燈光誘捕，至夏季時才可在白天捕捉飛魚，這段飛魚水汛期內蘭嶼人通常不捕捉別的魚類。</p>
+         </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Anna</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="bullets">首頁</a></li>
+                    <li><a href="#page01" data-icon="bullets">歷史地理</a></li>
+                    <li><a href="#page02" data-icon="bullets">特色景點</a></li>
+                    <li><a href="#page04" data-icon="bullets">交通資訊</a></li>
+                    <li><a href="#about" data-icon="bullets" >關於我們</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div><!--在地美食-->
+
+     <!--交通資訊-->
+     <div data-role="page" id="page04">
+
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+
+            <h1>蘭嶼暢快遊</h1>
+        </div>
+         <div role="main" class="ui-content">
+            <h2>交通資訊</h2>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UrkrpM820XA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>
+            
+            <h3>如何去蘭嶼?</h3>
+            <img src="image/04.PNG" alt="">
+            <p></p>
+            <h3>蘭嶼當地路線</h3>
+            <img src="image/03.png" alt="">
+            </div>
+        
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Anna</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="bullets">首頁</a></li>
+                    <li><a href="#page01" data-icon="bullets">歷史地理</a></li>
+                    <li><a href="#page02" data-icon="bullets">特色景點</a></li>
+                    <li><a href="#page03" data-icon="bullets">在地美食</a></li>
+                    <li><a href="#about" data-icon="bullets" >關於我們</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div><!--交通資訊-->
+
+     <!--關於我們-->
+     <div data-role="page" id="about" data-dialog="true">
+
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+            <h1>蘭嶼暢快遊</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <h2>關於蘭嶼</h2>
+            <p>蘭嶼最早的名稱為達悟語「Ponso no Tao」，意思是「人之島」。漢人最早以台語音譯紅頭嶼，日治時期以後固定紅頭嶼之名。1947年因島上盛產蝴蝶蘭而改名。</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Anna</h4>
+           
+            </div>
+        </div>
+
+    </div><!--關於我們-->
+</body>
+</html>
